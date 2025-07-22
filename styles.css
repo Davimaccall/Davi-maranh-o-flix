@@ -7,10 +7,11 @@ body {
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
+    border-bottom: solid 2px rgb(90, 90, 90);
     padding: 20px;
     font-size: 32px;
-    color: rgb(42, 122, 228);
+    color: rgb(89, 89, 89);
+    text-align: center;
 }
 
 .chamada {
@@ -18,7 +19,10 @@ header {
     padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .chamada-texto {
@@ -33,28 +37,30 @@ p {
     font-size: 20px;
 }
 
+.categoria {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    font-size: 28px;
+}
+
 .categoria-videos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-}
-
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .categoria-videos img {
     opacity: 0.5;
     height: 200px;
+    transition: all 0.3s ease;
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
-    border: 3px solid green;
-}
-
-.categoria h2 {
-    color: rgb(42, 122, 228);
+    border: 3px solid rgb(109, 0, 0);
 }
